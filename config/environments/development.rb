@@ -13,7 +13,7 @@ BiblesearchClient::Application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
   # config.cache_store = :dalli_store, {:expires_in => 1209600}
-  config.cache_store = :file_store, "./cache", {:expires_in => 120}
+  config.cache_store = :file_store, "./cache", {:expires_in => 120000}
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
