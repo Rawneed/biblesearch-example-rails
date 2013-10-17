@@ -4,17 +4,17 @@ gem 'sqlite3'
 gem 'nokogiri'
 
 group :assets do
-  gem 'sass-rails'#,   '~> 3.2.3'
-  gem 'coffee-rails'#, '~> 3.2.1'
-  gem 'uglifier'#, '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
   gem 'modernizr-rails'
 end
 
 gem 'bourbon'
 gem 'jquery-rails'
-gem "haml-rails"#, ">= 0.4"
-gem "html2haml"#, ">= 1.0.1", :group => :development
-gem "rspec-rails"#, ">= 2.12.2", :group => [:development, :test]
+gem "haml-rails"
+gem "html2haml"
+gem "rspec-rails"
 gem "rspec-rails", :group => [:development, :test]
 gem 'guard-livereload', :group => :development
 gem "capybara", :group => :test
