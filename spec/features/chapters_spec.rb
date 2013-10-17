@@ -8,14 +8,14 @@ describe "view chapter" do
 
 	it "displays next chapter if it exists" do
 		visit "/eng-CEV/Gen/1" 
-		find_button('Genesis 2').click
+    first(:css, '[href*="/Gen/2"]').click
 
-		current_path.should eq("eng-CEV/Gen/2")
+		current_path.should eq("/eng-CEV/Gen/2")
 	end
 
 	it "displays book name and chapter" do
 		visit "/eng-CEV/Gen/1" 
-		page.should have_xpath("chapter_title", :text => "Genesis 1")
+		page.should have_selector("#chapter_title", :text => /Genesis\s+1/)
 	end
 
 end
