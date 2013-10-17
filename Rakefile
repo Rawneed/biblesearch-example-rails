@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-BiblesearchClient::Application.load_tasks
+BiblesearchExample::Application.load_tasks

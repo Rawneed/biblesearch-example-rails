@@ -16,7 +16,7 @@ gem "haml-rails"
 gem "html2haml"
 gem "rspec-rails"
 gem "rspec-rails", :group => [:development, :test]
-gem 'guard-livereload', :group => :development
+#gem 'guard-livereload', :group => :development
 gem "capybara", :group => :test
 gem "database_cleaner", :group => :test
 gem "email_spec", :group => :test
