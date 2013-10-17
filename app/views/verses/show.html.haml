@@ -1,0 +1,10 @@
+#verse.scripture
+	%h2= @verse.reference
+	=raw @verse.text
+	=link_to chapter_path(@verse.parent.chapter.id), :class=>"btn" do
+		%i.icon-eye
+		=@verse.parent.chapter.name
+#copyright
+	=raw @verse.copyright
+#fums
+	=raw @fums

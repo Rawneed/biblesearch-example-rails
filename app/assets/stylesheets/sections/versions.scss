@@ -1,0 +1,97 @@
+// Place all the styles related to the versions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Titles for language and version
+#name,.version-title {
+    border-bottom: 1px solid $lightgray2;
+    padding-bottom: .8em;
+    margin-bottom: 0;
+    font-weight: 700;
+    @media screen and (max-width: 40em) {font-size: 1.4em;}
+}
+
+.version-list {
+    ul {
+        list-style: none;
+        margin: 0 0 em(30) 0;
+        padding: 0;
+        li {
+            border-bottom: 1px solid $lightgray;
+            & > a {
+                font-size: em(20);
+                color: $black;
+                font-weight: 400;
+                display: block;
+                position: relative;
+                line-height: 1.2;
+                padding: 1em 0;
+                outline:none;
+                @include transition (all .2s ease-in-out);
+                &:hover {color: $blue}
+                @media screen and (max-width: 40em) {font-size: 1.2em;}
+            }
+        }
+    }
+}
+
+.accordion {
+    width:100%;
+    min-width:270px;
+    margin: 0 auto;
+    ul {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        list-style: none;
+        li {
+            border-bottom: 1px solid $lightgray;
+            & > a {
+                font-size: em(18);
+                color: $black;
+                font-weight: 400;
+                display: block;
+                position: relative;
+                line-height: 44px;
+                outline:none;
+                @include transition (all .2s ease-in-out);
+                &:hover {color: $blue}
+                & span {
+                    width: 26px;
+                    height: 14px;
+                    position: absolute;
+                    top: 50%;
+                    right: -26px;
+                    margin-top: -7px;
+                    opacity:0;
+                    @include transition (all .2s ease-in-out);
+                }
+                @media screen and (max-width: 40em) {font-size: 1.2em;}
+            } //end & > a
+        }//end li
+        .st-open {
+            padding-bottom: .8em;
+            & > a {color: $blue;}
+        }
+        .chapters {
+            display: none;
+            a {
+                display: inline-block;
+                background: $lightgray;
+                color: #000;
+                width: 44px;
+                height: 44px;
+                margin-bottom: 4px;
+                line-height: 44px;
+                text-align: center;
+                @include transition (all .16s ease-in-out);
+                    &:hover {
+                        background: $black;
+                        color: #FFF;
+                    }
+            }
+        }
+    }
+}
+// show the chapters unloaded if no javascript
+.no-js .accordion ul .chapters {display: block;}

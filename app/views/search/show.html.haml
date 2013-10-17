@@ -1,0 +1,23 @@
+-if @result
+  -if @result.verses
+    -@result.verses.each do |verse|
+      .result.scripture
+        %h3=chapter_link verse.reference, verse.parent.chapter.id
+        =raw verse.text
+  -elsif @result.type == "passages"
+    %header.info
+      =link_to current_version.name, versions_path(:version_uid=>current_version.id), :class => "currentversion"
+    -@result.passages.each do |passage|
+      #passage.result.scripture
+        %h2=passage["display"]
+        =raw passage.text
+        /=link_to "View chapter", chapter_path(passage.start_verse_id), :class=>"btn"
+
+        = link_to chapter_path(passage.start_verse_id) do
+          %i.icon-menu-2
+
+  #copyright
+    =raw @copyrights
+  #fums
+    =raw @fums
+

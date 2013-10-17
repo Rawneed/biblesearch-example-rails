@@ -1,0 +1,24 @@
+/ = link_to versions_path(:version_uid=>current_version.id), :class => 'brand' do
+/ 	%i.icon-books
+= link_to show_version_path(current_version.id), :class => 'brand' do
+	%i.icon-book
+#searchgroup.cf
+	%ul#versionlist.dropdown
+		%li
+			%a.dropdown-toggle.btn{"data-toggle" => "dropdown", :href => "#"}
+
+				= current_version.abbreviation
+				%b.icon-chevron-down
+			%ul.dropdown-menu
+				- site_versions.each do |version|
+					%li
+						=link_to url_for({:version_uid => version.id, :q=>params[:q]}) do
+							%b=version.abbreviation
+							\-
+							=shorten_version_name(version.name)
+
+
+	=form_tag search_path(current_version.id), :method => "get", :class => "navbar-search" do
+		=text_field_tag :q, params[:q], :class => "search-query"
+		=button_tag :name => nil, :class => "search-submit" do
+			%i.icon-search.btn

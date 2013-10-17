@@ -1,0 +1,14 @@
+%h2#name=@version.name
+#toc.accordion
+	%ul
+		-@books.each do |book|
+			%li
+				%a{:href => "#"}
+					=book.name
+				.chapters
+					-book.chapters.collection.each do |chapter|
+						= link_to chapter.chapter, chapter_path(chapter.id)
+#copyright
+	=raw @version.copyright
+#fums
+	=raw @fums

@@ -1,0 +1,21 @@
+require 'spec_helper'
+
+describe "view chapter" do 
+	it "displays chapter text" do
+		visit "/eng-CEV/Gen/1" 
+		page.should have_content("In the beginning")
+	end
+
+	it "displays next chapter if it exists" do
+		visit "/eng-CEV/Gen/1" 
+		find_button('Genesis 2').click
+
+		current_path.should eq("eng-CEV/Gen/2")
+	end
+
+	it "displays book name and chapter" do
+		visit "/eng-CEV/Gen/1" 
+		page.should have_xpath("chapter_title", :text => "Genesis 1")
+	end
+
+end

@@ -1,0 +1,74 @@
+body {
+    font-family:$ui-font;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+    &:hover {color: (darken($blue, 20%))}
+}
+
+/* Headings */
+h1, h2, h3, h4, h5,h6 {
+  font-weight: 600;
+  margin-top:0;
+  margin-bottom: em(16);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+h1 {font-size: em(26);}
+h2 {font-size: em(22);}
+h3 {font-size: em(20);}
+h4 {font-size: em(18);}
+h5 {font-size: em(17);}
+
+.scripture {
+    font-size: 1.1em;
+    line-height: 1.8;
+    font-family: $scripture-font;
+    .s1 {
+        text-align: left;
+        font-weight: 800;
+        margin: 1em 0 1em 0;
+        color: $black;
+    }
+    h4.s2 {
+        margin: 1em 0;
+    }
+    h3.s {
+        text-align: left;
+        margin: 1em 0 .6em;
+    }
+    h5.r,h4.s2 {
+        text-align: left;
+        font-weight: 100;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        color: (lighten($black, 55%));
+    }
+    p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+        @media screen and (max-width: 768px) {font-size: em(20);line-height: 1.4;text-align: justify;}
+        @media screen and (max-width: 40em) {font-size: em(18);line-height: 1.4;text-align: justify;}
+    }
+    .pi {}
+    .p, .pi {
+        @media screen and (max-width: 768px) {text-align: justify;}
+    }
+    sup {
+        z-index: -1;
+        top: -1em;
+        font-size: 50%;
+    }
+    .btn {
+        font-family:$ui-font;
+    }
+    // grab all the quotes
+    [class*='q'] {
+        font-style: italic;
+        color: (lighten($black,30%));
+        text-indent: .5em;
+        margin-left: 0;
+    }
+}

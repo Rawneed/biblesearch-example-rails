@@ -1,0 +1,4 @@
+BIBLESEARCH_API_KEY: yourXyour1DlyourKyourkyourSyourMyourfMM
+DEFAULT_VERSION: eng-GNTD
+SITE_VERSIONS: [eng-GNTD,eng-CEV,spa-RVR60]
+ELASTICACHE_ENDPOINT: bsc-cyour.ruyour.your.cache.amazonaws.com:11111

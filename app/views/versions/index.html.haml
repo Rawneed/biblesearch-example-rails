@@ -1,0 +1,12 @@
+.version-list
+	-@version_langs.each do |lang, versions|
+		%h2.version-title=lang
+		%ul
+			-versions.each do |version|
+				%li
+					= link_to show_version_path(version.id) do
+						=version.abbreviation
+						\-
+						=version.name
+#fums
+	=raw @fums

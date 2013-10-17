@@ -1,0 +1,8 @@
+#passages.scripture
+	-@passages.each do |passage|
+		%h2.reference= passage["display"]
+		=raw passage.text
+		=chapter_link_from_verse_id(passage.start_verse_id)
+#copyright
+	-@copyrights.each do |copyright|
+		=raw copyright

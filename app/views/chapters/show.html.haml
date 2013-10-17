@@ -1,0 +1,33 @@
+%header.info
+  =link_to @version.name, versions_path(:version_uid=>current_version.id), :class => "currentversion"
+  %h2#chapter_title
+    = @chapter.parent.book.name
+    = @chapter.chapter
+  .nav.top
+    -if @chapter.previous
+      = link_to chapter_path(@chapter.previous.chapter.id), {:class => "previous"} do
+        %i.icon-chevron-left
+        / =@chapter.previous.chapter.name
+    -if @chapter.next
+      = link_to chapter_path(@chapter.next.chapter.id), {:class => "next"} do
+        / =@chapter.next.chapter.name
+        %i.icon-chevron-right
+
+#chapter_text.scripture
+  =raw @chapter.text
+
+.nav.bottom
+  -if @chapter.previous
+    = link_to chapter_path(@chapter.previous.chapter.id), {:class => "previous"} do
+      %i.icon-chevron-left
+      / =@chapter.previous.chapter.name
+  -if @chapter.next
+    = link_to chapter_path(@chapter.next.chapter.id), {:class => "next"} do
+      / =@chapter.next.chapter.name
+      %i.icon-chevron-right
+
+#copyright
+  =raw @chapter.copyright
+
+#fums
+  =raw @fums
