@@ -18,22 +18,19 @@
 
 #chapter.crossreference
   -if @chapter.crossreferences
-    %h2 "crossrefs"
+    %hr
     %ul.crossreference
       -@chapter.crossreferences.each do |xref|
         %li.crossreference
-          = raw xref.crossreference.marker
           = raw xref.crossreference.content
-          = raw xref.crossreference.note_id
-          = raw xref.crossreference.verse_id
 
 #chapter.footnote
   -if @chapter.footnotes
-    %h2 "footnotes"
+    %hr
     %ul.footnote
       -@chapter.footnotes.each do |fn|
         %li.footnote
-          =raw @fn
+          =raw fn.footnote.content
 
 .nav.bottom
   -if @chapter.previous
