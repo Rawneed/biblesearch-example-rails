@@ -9,7 +9,7 @@ end
 
 describe "show version" do
 	it "displays version" do
-		visit "/versions/eng-CEVD"
+		visit "/versions/eng-CEV"
 		page.should have_content("Contemporary English Version")
 	end
 end
