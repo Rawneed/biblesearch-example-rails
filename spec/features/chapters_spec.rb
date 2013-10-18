@@ -14,7 +14,7 @@ describe "view chapter" do
 
 	it "displays book name and chapter" do
 		visit "/eng-CEV/Gen/1"
-		page.should have_selector("#chapter_title", :text => /Genesis\s+1/)
+		page.should have_selector("#chapter.title", :text => /Genesis\s+1/)
 	end
 
 end

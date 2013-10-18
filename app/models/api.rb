@@ -1,12 +1,12 @@
 class API
   extend ActiveModel::Naming
-  
+
   def initialize(attributes = {})
     attributes.each do |name, value|
       send("#{name}=", value)
     end
   end
-  
+
   def persisted?
     false
   end
@@ -31,14 +31,11 @@ class API
 
   def self.books_with_chapters(version_uid)
     Rails.cache.fetch([:books_with_chapters,version_uid]) do
-      books = API.books(version_uid)
-      books.collection.each do |book|
-        book.chapters = API.chapters(book.id)
-      end
-      books
+      biblesearch.books(version_uid, include_chapters: true)
     end
   end
 
+#TODO: refactor to book
   def self.books(book_uid)
     Rails.cache.fetch([:book,book_uid]) do
       biblesearch.books(book_uid)
@@ -53,13 +50,13 @@ class API
 
   def self.chapter(chapter_uid)
     Rails.cache.fetch([:chapter,chapter_uid]) do
-      biblesearch.chapter(chapter_uid)
+      biblesearch.chapter chapter_uid, include_marginalia: true
     end
   end
 
   def self.verse(verse_uid)
     Rails.cache.fetch([:verse,verse_uid]) do
-      biblesearch.verse(verse_uid)
+      biblesearch.verse verse_uid, include_marginalia: true
     end
   end
 
