@@ -12,25 +12,25 @@ end
 
 gem 'bourbon'
 gem 'jquery-rails'
-gem "haml-rails"
-gem "html2haml"
-gem "rspec-rails", :group => [:development, :test]
+gem 'haml-rails'
+gem 'html2haml'
+gem 'rspec-rails', :group => [:development, :test]
 gem 'guard-rspec', :group => [:development, :test]
 #gem 'guard-livereload', :group => :development
-gem "capybara", :group => :test
-gem "database_cleaner", :group => :test
-gem "email_spec", :group => :test
-# gem "quiet_assets", :group => :development
-gem "figaro"
-# gem "better_errors", :group => :development
-# gem "binding_of_caller" :group => :development, :platforms => [:mri_19, :rbx]
+gem 'capybara', :group => :test
+gem 'database_cleaner', :group => :test
+gem 'email_spec', :group => :test
+# gem 'quiet_assets', :group => :development
+gem 'figaro'
+# gem 'better_errors', :group => :development
+# gem 'binding_of_caller' :group => :development, :platforms => [:mri_19, :rbx]
 
-#gem "biblesearch-api", :git => 'git@github.com:americanbible/biblesearch-api.git', :branch => 'develop'
-gem "biblesearch-api"
-gem "dalli"
+#gem 'biblesearch-api', :git => 'git@github.com:americanbible/biblesearch-api.git', :branch => 'develop'
+gem 'biblesearch-api'
+gem 'dalli'
 gem 'dalli-elasticache', :group => :production
 
-gem "hashie"
+gem 'hashie'
 
-gem "redcarpet"
-gem "oj"
+gem 'redcarpet'
+gem 'oj'
