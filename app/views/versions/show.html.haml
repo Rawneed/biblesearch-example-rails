@@ -6,7 +6,7 @@
 				%a{:href => "#"}
 					=book.name
 				.chapters
-					-book.chapters.collection.each do |chapter|
+					-book.chapters.each do |chapter|
 						= link_to chapter.chapter, chapter_path(chapter.id)
 #copyright
 	=raw @version.copyright

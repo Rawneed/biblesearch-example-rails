@@ -31,14 +31,11 @@ class API
 
   def self.books_with_chapters(version_uid)
     Rails.cache.fetch([:books_with_chapters,version_uid]) do
-      books = API.books(version_uid)
-      books.collection.each do |book|
-        book.chapters = API.chapters(book.id)
-      end
-      books
+      biblesearch.books(version_uid, include_chapters: true)
     end
   end
 
+#TODO: refactor to book
   def self.books(book_uid)
     Rails.cache.fetch([:book,book_uid]) do
       biblesearch.books(book_uid)

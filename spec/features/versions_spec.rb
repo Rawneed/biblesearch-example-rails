@@ -1,15 +1,15 @@
 require 'spec_helper'
 
-describe "list versions" do 
+describe "list versions" do
 	it "displays version titles" do
-		visit "/versions" 
+		visit "/versions"
 		page.should have_content("Contemporary English Version")
 	end
 end
 
-describe "show versions" do 
+describe "show version" do
 	it "displays version" do
-		visit "/versions/eng-CEVD" 
+		visit "/versions/eng-CEVD"
 		page.should have_content("Contemporary English Version")
 	end
 end
