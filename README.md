@@ -2,7 +2,7 @@
 
 This Ruby on Rails application provides a simple way to create a website people can use to read the Bible in various languages. Use it as is or extend it for your own purpose.
 
-A live demo is at [http://live.bibles.org](http://live.bibles.org).
+A live demo is at [http://lite.bibles.org](http://live.bibles.org).
 
 This application uses the [BibleSearch API Gem](https://github.com/americanbible/biblesearch-api-ruby) and Scripture data from [Bibles.org](http://bibles.org).
 
