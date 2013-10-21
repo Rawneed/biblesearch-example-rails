@@ -4,7 +4,7 @@ This Ruby on Rails application provides a simple way to create a website people 
 
 A live demo is at [http://lite.bibles.org](http://live.bibles.org).
 
-This application uses the [BibleSearch API Gem](https://github.com/americanbible/biblesearch-api-ruby) and Scripture data from [Bibles.org](http://bibles.org).
+This application uses the [BibleSearch API Gem](https://github.com/americanbible/biblesearch-api-ruby) and Scripture data from [Bibles.org](http://tools.bibles.org/api.html).
 
 ## Quick Start
 
@@ -22,7 +22,7 @@ You should see your very own Bible search page.
 
 ## About Caching
 
-Most live web sites benefit from some amount of caching. Sites that utilize the [BibleSearch API](http://Bibles.org) benefit more than most because the Scripture data changes very little and is moderately large. Versions are updated from time-to-time, but usually those updates are very rare and very minor, so we've set caching on the Bible text to two weeks. New versions are a bit more common, so we've set the list of Bibles to update daily.
+Most live web sites benefit from some amount of caching. Sites that utilize the [BibleSearch API](http://tools.bibles.org/api.html) benefit more than most because the Scripture data changes very little and is moderately large. Versions are updated from time-to-time, but usually those updates are very rare and very minor, so we've set caching on the Bible text to two weeks. New versions are a bit more common, so we've set the list of Bibles to update daily.
 
 Besides speeding up your site and cutting bandwidth costs, caching also helps you be a good steward of hosting costs donated by Bibles.org. It can be very useful to turn off caching to solve some kinds of bugs and configuration problems, but please turn it back on once the problem are solved.
 
@@ -34,8 +34,8 @@ This application is configed using [Figaro](https://github.com/laserlemon/figaro
 
 Here are the configurable settings:
 
-1. **BIBLESEARCH_API_KEY**: your personal API key from [Bibles.org](http://bibles.org). This key allows your application to fetch and use Scripture versions.
-1. **DEFAULT_VERSION**: the initial Bible version you want to display, like `eng-GNTD` for *Good News Translation, US Version*. You can look up these abbreviations on [Bibles.org](http://bibles.org).
+1. **BIBLESEARCH_API_KEY**: your personal API key from [Bibles.org](http://tools.bibles.org/api.html). This key allows your application to fetch and use Scripture versions.
+1. **DEFAULT_VERSION**: the initial Bible version you want to display, like `eng-GNTD` for *Good News Translation, US Version*. You can look up these abbreviations on [Bibles.org](http://tools.bibles.org/api.html).
 1. **SITE_VERSIONS**: A list of the versions you want people to be able to choose from `[eng-GNTD,eng-CEV,spa-RVR60]`.
 1. **RAILS_CACHE_STORE**: the caching you want to use when running in local (development) mode. Defaults to `file_store`. Use `null_store` to disable caching.
 1. **ELASTICACHE_ENDPOINT**: if you accelerate your site with [Amazon ElastiCache](http://aws.amazon.com/elasticache/), this points to your cache store.
