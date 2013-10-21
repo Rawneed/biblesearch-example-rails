@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe "view chapter" do
+
 	it "displays chapter text" do
 		visit "/eng-CEV/Gen/1"
 		page.should have_content("In the beginning")
