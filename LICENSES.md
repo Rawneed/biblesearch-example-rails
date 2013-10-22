@@ -5,6 +5,7 @@ This sample application uses several freely available technologies with varying 
 * **This Application**: MIT license.
 * **CharisSIL Font**: SIL Open Font License 1.1
 * **Montserrat Font**: SIL Open Font License 1.1
+* **Font Awesome Font**: SIL Open Font License 1.1
 
 ## Application License
 
@@ -31,6 +32,8 @@ Following OFL rules, each font declares its own names and copyrights:
 * *CharisSIL*: Copyright © 1997-2013, SIL International http://scripts.sil.org/ with Reserved Font Names "Charis" and "SIL". (Available from the [SIL Non-Roman Script Initiative](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=charissilfont).)
 
 * *Montserrat*: Copyright © 2011-2012, Julieta Ulanovsky (julieta.ulanovsky@gmail.com), with Reserved Font Names 'Montserrat'. (Available from [Google Fonts](http://www.google.com/fonts/specimen/Montserrat).)
+
+* *Font Awesome*: releases under the OFL 1.1. We are still looking for it's copyright and name reservation text and have only found, "Font Awesome by Dave Gandy - [http://fontawesome.io](http://fontawesome.io)".
 
 ### SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 
