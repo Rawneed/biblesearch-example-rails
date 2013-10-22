@@ -1,8 +1,6 @@
 require 'spec_helper'
 
-describe "view passage" do
-
-  use_vcr_cassette
+describe "view passage", vcr: true do
 
 	it "displays passage text" do
 		visit "/eng-CEV/passages?q=Gen%201:3-6"
