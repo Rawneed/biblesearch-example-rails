@@ -33,22 +33,25 @@ header.info {
     @media screen and (max-width: 40em) {display: none}
 }
 .nav.bottom {
-    display: block;
-    font-size: 0;
-    margin-top: 20px;
+    @include clearfix;
+    margin: $block-margin;
     border-top: solid 1px $lightgray;
     border-bottom: solid 1px $lightgray;
     a {
         color: $black;
+        width: 50%;
+        height: 2.8em;
+        line-height: 3.2em;
+        float: left;
+        display: block;
         &:hover, &:active {color: $blue;}
         i {
-            display: inline-block;
-            font-size: 16px;
-            width: 50%;
-            height: 44px;
-            line-height: 44px;
+            font-size: 1em;
             @include box-sizing(border-box);
         }
-        &.next {text-align: right;}
+        &.next {
+            float: right;
+            text-align: right;
+        }
     }
 }
