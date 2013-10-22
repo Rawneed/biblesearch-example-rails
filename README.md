@@ -1,5 +1,8 @@
 # Bible Search Example for Rails
 
+* Stable Version: [![Build Status](https://travis-ci.org/americanbible/biblesearch-example-rails.png?branch=master)](https://travis-ci.org/americanbible/biblesearch-example-rails)
+* Development Version: [![Build Status](https://travis-ci.org/americanbible/biblesearch-example-rails.png?branch=develop)](https://travis-ci.org/americanbible/biblesearch-example-rails)
+
 This Ruby on Rails application provides a simple way to create a website people can use to read the Bible in various languages. Use it as is or extend it for your own purpose. We'd love to hear about your enhancements!
 
 A live demo is at [http://lite.bibles.org](http://lite.bibles.org).
