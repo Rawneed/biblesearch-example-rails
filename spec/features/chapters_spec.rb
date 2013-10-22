@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe "view chapter" do
 
+  use_vcr_cassette
+
 	it "displays chapter text" do
 		visit "/eng-CEV/Gen/1"
 		page.should have_content("In the beginning")
