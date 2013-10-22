@@ -16,6 +16,8 @@ gem 'haml-rails'
 gem 'html2haml'
 gem 'rspec-rails', :group => [:development, :test]
 gem 'guard-rspec', :group => [:development, :test]
+gem 'vcr', :group => [:development, :test]
+gem 'webmock', '< 1.14', :group => [:development, :test]
 #gem 'guard-livereload', :group => :development
 gem 'capybara', :group => :test
 gem 'database_cleaner', :group => :test

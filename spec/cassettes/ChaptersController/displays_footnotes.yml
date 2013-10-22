@@ -1,0 +1,233 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://<%= api_key %>:X@bibles.org/v2/versions/ENG-CEV.js
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.6
+      Date:
+      - Tue, 22 Oct 2013 20:00:10 GMT
+      Content-Type:
+      - application/javascript
+      Content-Length:
+      - '2671'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/5.3.23
+      Set-Cookie:
+      - abs_session=EjkEWl5DTMxb2jpfed34Wj31Ykq3B1WWvHuUcY1nwhhytGdvEhp7N%2B9MAfg2hO4mFrGc1xJpwFjV69ssnMZcvM3xOcQks6%2FT8LvdcHBi10McNe5KrzN2a40j4DAqs0KPjnM4hkcBH4HDlnJCW16Rg%2FGLcAVqm3eKpJkDuXXR3LWEm%2FGPrDsXa58tqLl0OLAKstMLyZ9qgpAAeYim0uLDOpeYlrBPTNRayazLkflqpKo6cq6YPq2l9r5W9vpvxEMSqyuEeJF0QLx6jdJSUCQ5UJn%2FokKMnaEhi28wFGME93s%3D;
+        expires=Fri, 20-Oct-2023 20:00:13 GMT; path=/; domain=.bibles.org
+      - abs_session=Vm4KT8b%2FhMzWz7YMqUALeiePvM2KJpym1vh%2Fdm9sbGeclupWL7Jbm3zkdICrIJV8qalXVisOoWPXRerCgtPq9nOIYg3DVhr46VagaP3458GOID1VCFeheUVt%2BY%2BIDHsjV1Q65A%2FfjJiGl6SCpDpat6Y6N0ppPdAXKAmTkSqBNbc5%2FWsiXzZcMAXJpG%2FV37V9WeQjTNYRBKb4ZX%2B1m%2ByUilF3ReVUnLJdULfWkG2Tz2P9YrfQRWF3G%2ByMvSQ50dANScv%2FPWY6BRCcnSiPk%2FSyQXyKTIZTUyYYnsoIPZm7th5ncHGOiPhdKm5pFWYFlrowKCYza1UN938HylLxzxy46n7i2iRpfSumXD5xk5qKXLafP2hVWBFhOICT804R0EKI;
+        expires=Fri, 20-Oct-2023 20:00:13 GMT; path=/; domain=.bibles.org
+      - abs_uid=808c98bfa7e1dd67a29503548ea1a3879ed86797; expires=Fri, 20-Oct-2023
+        20:00:13 GMT; path=/; domain=.bibles.org
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"versions":[{"id":"eng-CEV","name":"Contemporary English
+        Version (US Version)","lang":"eng-US","lang_code":"ISO 639-3","contact_url":"http:\/\/www.americanbible.org\/","audio":"NONE","copyright":"<p>Contemporary
+        English Version\u00ae \u00a9 1995 American Bible Society.  All rights reserved.<\/p>\n<p>Bible
+        text from the Contemporary English Version (CEV) is not to be reproduced in
+        copies or otherwise by any means except as permitted in writing by American
+        Bible Society, 1865 Broadway, New York, NY 10023 (<a href=\"http:\/\/www.americanbible.org\/\">www.americanbible.org<\/a>).<\/p>","info":"<h1>Contemporary
+        English Version (US Version)<\/h1>\n<p>Uncompromising simplicity marked the
+        American Bible Society''s translation of the Contemporary English Version
+        that was first published in 1995. The text is easily read by grade schoolers,
+        second language readers, and those who prefer the more contemporized form.
+        The CEV is not a paraphrase; it is an accurate and faithful translation of
+        the original manuscripts.<\/p>\n<p>After almost 200 years of ongoing ministry,
+        American Bible Society invites people to experience the life-changing message
+        of the Bible. Offering an increasing range of innovative ministries to address
+        core life questions and struggles, the Bible Society partners with Christian
+        churches and national Bible societies to share God\u2019s Word both in the
+        United States and around the globe.<\/p>\n<p>For more information, visit <a
+        href=\"http:\/\/www.americanbible.org\/\">www.americanbible.org<\/a>.<\/p>
+        \n<p>To purchase a copy of this translation, visit <a href=\"http:\/\/www.bibles.com\/\">www.bibles.com<\/a>.<\/p>","lang_name":"English
+        (US)","lang_name_eng":"English","abbreviation":"CEV","updated_at":""}],"meta":{"fums":"<script>\nvar
+        _BAPI=_BAPI||{};\nif(typeof(_BAPI.t)===''undefined''){\ndocument.write(''\\x3Cscript
+        src=\"''+document.location.protocol+''\/\/d2ue49q0mum86x.cloudfront.net\/include\/fums.c.js\"\\x3E\\x3C\/script\\x3E'');}\ndocument.write(\"\\x3Cscript\\x3E_BAPI.t(''5266d94d18ac51.79544572'');\\x3C\/script\\x3E\");\n<\/script><noscript><img
+        src=\"https:\/\/d3a2okcloueqyx.cloudfront.net\/nf1?t=5266d94d18ac51.79544572\"
+        height=\"1\" width=\"1\" border=\"0\" alt=\"\" style=\"height: 0; width: 0;\"
+        \/><\/noscript>","fums_tid":"5266d94d18ac51.79544572","fums_js_include":"d2ue49q0mum86x.cloudfront.net\/include\/fums.c.js","fums_js":"var
+        _BAPI=_BAPI||{};if(typeof(_BAPI.t)!=''undefined''){ _BAPI.t(''5266d94d18ac51.79544572'');
+        }","fums_noscript":"<img src=\"https:\/\/d3a2okcloueqyx.cloudfront.net\/nf1?t=5266d94d18ac51.79544572\"
+        height=\"1\" width=\"1\" border=\"0\" alt=\"\" style=\"height: 0; width: 0;\"
+        \/>"}}}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2013 20:00:13 GMT
+- request:
+    method: get
+    uri: http://<%= api_key %>:X@bibles.org/v2/chapters/eng-CEV:Gen.26.js?include_marginalia=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.6
+      Date:
+      - Tue, 22 Oct 2013 20:00:11 GMT
+      Content-Type:
+      - application/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/5.3.23
+      Set-Cookie:
+      - abs_session=MPYNEB52BaoqsB3DwIFhz6orjJHTKEb%2BN29cdQCi7IHtwJo6yGgE67geAO%2FslEc1Ayai6DV8d1pTyqr7k3KorBUIcdVygMSZILQEAnk4CoGX6BOI1ZBx3uM%2F7EzJ0VrNqYKaJaq3rujJRJGQHa4xtBLFA2SFvnNNu%2FLqCBHAdETybwcmykWt9UZBk3fWOEcqZod6VjJJZpra%2F7QqQatlP%2FQh06%2BZ%2B%2BlgNNY%2FR2yInlbiEPO4vKw5PzgVdxgC%2FMGaRV3PnjuBPi9S5bE%2FjOgrYFvIPNRZenrmaUloxxsZkpEjPCP5q5Vekvjhv%2BehgYnmYAKqQ2VM4V2OEMhjBST9lj86S6YGd05shVRqBxv4CZ4KdKnXpMy07xxyThcRXYz1;
+        expires=Fri, 20-Oct-2023 20:00:13 GMT; path=/; domain=.bibles.org
+      - abs_session=QcVC1YDlwmok%2F5ofOZZ9F5DEfDxZO874oSMS55Nan80MVjl10zAPTx2cwmVOPn7Ax32q0I9uH7YhGH0TnMlL2TuIITrHRK%2BAZwixncdAl6EDxS8D7g2xzAt5nvdYnmvGBUaC2Sgr321RiwQgPzYCzZ3CQzWQzhb2Mg31rf1PLGNhBXC6vpGxXzkqT68jznviVeT5cp2B%2BxrOXu52uJerjVfSuYPK%2BfxaWdyPcH7ySEDWn76RHSO21c8C0raNf%2FN0qe2dsqoOWMjMjw1vxwG4rD34IMrXVTRJ8WyxUkwT0BY%3D;
+        expires=Fri, 20-Oct-2023 20:00:13 GMT; path=/; domain=.bibles.org
+      - abs_uid=837b2a9ddf059afa4fe1517d644c3dd4b103c79f; expires=Fri, 20-Oct-2023
+        20:00:13 GMT; path=/; domain=.bibles.org
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"chapters":[{"auditid":"0","label":"","text":"<div id=\"Gen.26\"
+        class=\"chapter\">\n<h3 class=\"s1\">Isaac and Abimelech<\/h3>\n<p class=\"p\"><span
+        class=\"v0_26_1\"><sup id=\"Gen.26.1\" class=\"v0_26_1\">1<\/sup>Once during
+        Abraham''s lifetime, the fields had not produced enough grain, and now the
+        same thing happened. So Isaac went to King Abimelech of the Philistines in
+        the land of Gerar, <\/span><span class=\"v0_26_2\"><sup id=\"Gen.26.2\" class=\"v0_26_2\">2<\/sup>because
+        the LORD had appeared to Isaac and said:<\/span><\/p>\n<p class=\"pi\"><span
+        class=\"v0_26_2\">Isaac, stay away from Egypt! I will show you where I want
+        you to go. <\/span><span class=\"v0_26_3\"><sup id=\"Gen.26.3\" class=\"v0_26_3\">3<\/sup><a
+        href=\"#Gen.26.3!x.1\" id=\"link_Gen.26.3!x.1\" class=\"notelink\">-<\/a>
+        You will live there as a foreigner, but I will be with you and bless you.
+        I will keep my promise to your father Abraham by giving this land to you and
+        your descendants.<\/span><\/p>\n<p class=\"pi\"><span class=\"v0_26_4\"><sup
+        id=\"Gen.26.4\" class=\"v0_26_4\">4<\/sup>I will give you as many descendants
+        as there are stars in the sky, and I will give your descendants all of this
+        land. They will be a blessing to every nation on earth,<a href=\"#Gen.26.4!f.1\"
+        id=\"link_Gen.26.4!f.1\" class=\"notelink\">+<\/a><\/span><span class=\"v0_26_5\"><sup
+        id=\"Gen.26.5\" class=\"v0_26_5\">5<\/sup>because Abraham did everything I
+        told him to do.<\/span><\/p>\n<p class=\"p\"><span class=\"v0_26_6\"><sup
+        id=\"Gen.26.6\" class=\"v0_26_6\">6<\/sup>Isaac moved to Gerar <\/span><span
+        class=\"v0_26_7\"><sup id=\"Gen.26.7\" class=\"v0_26_7\">7<\/sup><a href=\"#Gen.26.7!x.1\"
+        id=\"link_Gen.26.7!x.1\" class=\"notelink\">-<\/a> with his beautiful wife
+        Rebekah. He was afraid that someone might kill him to get her, and so he told
+        everyone that Rebekah was his sister. <\/span><span class=\"v0_26_8\"><sup
+        id=\"Gen.26.8\" class=\"v0_26_8\">8<\/sup>After Isaac had been there a long
+        time, King Abimelech looked out a window and saw Isaac hugging and kissing
+        Rebekah. <\/span><span class=\"v0_26_9\"><sup id=\"Gen.26.9\" class=\"v0_26_9\">9<\/sup>Abimelech
+        called him in and said, \u201cRebekah must be your wife! Why did you say she
+        is your sister?\u201d<\/span><\/p>\n<p class=\"p\"><span class=\"v0_26_9\">\u201cBecause
+        I thought someone would kill me,\u201d Isaac answered.<\/span><\/p>\n<p class=\"p\"><span
+        class=\"v0_26_10\"><sup id=\"Gen.26.10\" class=\"v0_26_10\">10<\/sup>\u201cDon''t
+        you know what you''ve done?\u201d Abimelech exclaimed. \u201cIf someone had
+        slept with her, you would have made our whole nation guilty!\u201d <\/span><span
+        class=\"v0_26_11\"><sup id=\"Gen.26.11\" class=\"v0_26_11\">11<\/sup>Then
+        Abimelech warned his people that anyone who even touched Isaac or Rebekah
+        would be put to death.<\/span><\/p>\n<p class=\"p\"><span class=\"v0_26_12\"><sup
+        id=\"Gen.26.12\" class=\"v0_26_12\">12<\/sup>Isaac planted grain and had a
+        good harvest that same year. The LORD blessed him, <\/span><span class=\"v0_26_13\"><sup
+        id=\"Gen.26.13\" class=\"v0_26_13\">13<\/sup>and Isaac was so successful that
+        he became very rich. <\/span><span class=\"v0_26_14\"><sup id=\"Gen.26.14\"
+        class=\"v0_26_14\">14<\/sup>In fact, the Philistines were jealous of the large
+        number of sheep, goats, and slaves that Isaac owned, <\/span><span class=\"v0_26_15\"><sup
+        id=\"Gen.26.15\" class=\"v0_26_15\">15<\/sup>and they stopped up the wells
+        that Abraham''s servants had dug before his death. <\/span><span class=\"v0_26_16\"><sup
+        id=\"Gen.26.16\" class=\"v0_26_16\">16<\/sup>Finally, Abimelech said, \u201cIsaac,
+        I want you to leave our country. You have become too powerful to stay here.\u201d<\/span><\/p>\n<p
+        class=\"p\"><span class=\"v0_26_17\"><sup id=\"Gen.26.17\" class=\"v0_26_17\">17<\/sup>Isaac
+        left and settled in Gerar Valley, <\/span><span class=\"v0_26_18\"><sup id=\"Gen.26.18\"
+        class=\"v0_26_18\">18<\/sup>where he cleaned out those wells that the Philistines
+        had stopped up. Isaac also gave each of the wells the same name<a href=\"#Gen.26.18!f.1\"
+        id=\"link_Gen.26.18!f.1\" class=\"notelink\">+<\/a> that Abraham had given
+        to them. <\/span><span class=\"v0_26_19\"><sup id=\"Gen.26.19\" class=\"v0_26_19\">19<\/sup>While
+        his servants were digging in the valley, they found a spring-fed well. <\/span><span
+        class=\"v0_26_20\"><sup id=\"Gen.26.20\" class=\"v0_26_20\">20<\/sup>But the
+        shepherds of Gerar Valley quarreled with Isaac''s shepherds and claimed the
+        water belonged to them. So this well was named \u201cQuarrel,\u201d because
+        they had quarreled with Isaac.<\/span><\/p>\n<p class=\"p\"><span class=\"v0_26_21\"><sup
+        id=\"Gen.26.21\" class=\"v0_26_21\">21<\/sup>Isaac''s servants dug another
+        well, and the shepherds also quarreled about it. So that well was named \u201cJealous.\u201d
+        <\/span><span class=\"v0_26_22\"><sup id=\"Gen.26.22\" class=\"v0_26_22\">22<\/sup>Finally,
+        they dug one more well. There was no quarreling this time, and the well was
+        named \u201cLots of Room,\u201d because the LORD had given them room and would
+        make them very successful.<\/span><\/p>\n<p class=\"p\"><span class=\"v0_26_23\"><sup
+        id=\"Gen.26.23\" class=\"v0_26_23\">23<\/sup>Isaac went on to Beersheba, <\/span><span
+        class=\"v0_26_24\"><sup id=\"Gen.26.24\" class=\"v0_26_24\">24<\/sup>where
+        the LORD appeared to him that night and told him, \u201cDon''t be afraid!
+        I am the God who was worshiped by your father Abraham, my servant. I will
+        be with you and bless you, and because of Abraham I will give you many descendants.\u201d
+        <\/span><span class=\"v0_26_25\"><sup id=\"Gen.26.25\" class=\"v0_26_25\">25<\/sup>Isaac
+        built an altar there and worshiped the LORD. Then he set up camp, and his
+        servants started digging a well.<\/span><\/p>\n<p class=\"p\"><span class=\"v0_26_26\"><sup
+        id=\"Gen.26.26\" class=\"v0_26_26\">26<\/sup><a href=\"#Gen.26.26!x.1\" id=\"link_Gen.26.26!x.1\"
+        class=\"notelink\">-<\/a> Meanwhile, Abimelech had left Gerar and was taking
+        his advisor Ahuzzath and his army commander Phicol to see Isaac. <\/span><span
+        class=\"v0_26_27\"><sup id=\"Gen.26.27\" class=\"v0_26_27\">27<\/sup>When
+        they arrived, Isaac asked, \u201cWhy are you here? Didn''t you send me away
+        because you hated me?\u201d<\/span><\/p>\n<p class=\"p\"><span class=\"v0_26_28\"><sup
+        id=\"Gen.26.28\" class=\"v0_26_28\">28<\/sup>They answered, \u201cWe now know
+        for certain that the LORD is with you, and we have decided there needs to
+        be a peace treaty between you and us. So let''s make a solemn agreement <\/span><span
+        class=\"v0_26_29\"><sup id=\"Gen.26.29\" class=\"v0_26_29\">29<\/sup>not to
+        harm each other. Remember, we have never hurt you, and when we sent you away,
+        we let you go in peace. The LORD has truly blessed you.\u201d<\/span><\/p>\n<p
+        class=\"p\"><span class=\"v0_26_30\"><sup id=\"Gen.26.30\" class=\"v0_26_30\">30<\/sup>Isaac
+        gave a big feast for them, and everyone ate and drank. <\/span><span class=\"v0_26_31\"><sup
+        id=\"Gen.26.31\" class=\"v0_26_31\">31<\/sup>Early the next morning Isaac
+        and the others made a solemn agreement, then he let them go in peace.<\/span><\/p>\n<p
+        class=\"p\"><span class=\"v0_26_32\"><sup id=\"Gen.26.32\" class=\"v0_26_32\">32<\/sup>Later
+        that same day Isaac''s servants came and said, \u201cWe''ve struck water!\u201d
+        <\/span><span class=\"v0_26_33\"><sup id=\"Gen.26.33\" class=\"v0_26_33\">33<\/sup>So
+        Isaac named the well Shibah,<a href=\"#Gen.26.33!f.1\" id=\"link_Gen.26.33!f.1\"
+        class=\"notelink\">+<\/a> and the town is still called Beersheba.<a href=\"#Gen.26.33!f.2\"
+        id=\"link_Gen.26.33!f.2\" class=\"notelink\">+<\/a><\/span><\/p>\n<h3 class=\"s1\">Esau''s
+        Foreign Wives<\/h3>\n<p class=\"p\"><span class=\"v0_26_34\"><sup id=\"Gen.26.34\"
+        class=\"v0_26_34\">34<\/sup>When Esau was 40 years old, he married Judith
+        the daughter of Beeri the Hittite and Basemath the daughter of Elon the Hittite.
+        <\/span><span class=\"v0_26_35\"><sup id=\"Gen.26.35\" class=\"v0_26_35\">35<\/sup>But
+        these two women brought a lot of grief to Esau''s parents Isaac and Rebekah.<\/span><\/p>\n<\/div>\n","chapter":"26","id":"eng-CEV:Gen.26","osis_end":"eng-CEV:Gen.26.35","parent":{"book":{"path":"\/books\/eng-CEV:Gen","name":"Genesis","id":"eng-CEV:Gen"}},"next":{"chapter":{"path":"\/chapters\/eng-CEV:Gen.27","name":"Genesis
+        27","id":"eng-CEV:Gen.27"}},"previous":{"chapter":{"path":"\/chapters\/eng-CEV:Gen.25","name":"Genesis
+        25","id":"eng-CEV:Gen.25"}},"copyright":"<p>Contemporary English Version\u00ae
+        \u00a9 1995 American Bible Society.  All rights reserved.<\/p>\n<p>Bible text
+        from the Contemporary English Version (CEV) is not to be reproduced in copies
+        or otherwise by any means except as permitted in writing by American Bible
+        Society, 1865 Broadway, New York, NY 10023 (<a href=\"http:\/\/www.americanbible.org\/\">www.americanbible.org<\/a>).<\/p>","footnotes":[{"footnote":{"marker":"+","content":"<span
+        verse_id=\"Gen.26.4\" id=\"Gen.26.4!f.1\" class=\"note f\"><span class=\"fr\">26.4
+        <\/span><span class=\"fq\">They \u2026 on earth: <\/span><span class=\"ft\">Or
+        \u201cAll nations on earth will ask me to bless them.\u201d<\/span><\/span>","note_id":"Gen.26.4!f.1","verse_id":"eng-CEV:Gen.26.4"}},{"footnote":{"marker":"+","content":"<span
+        verse_id=\"Gen.26.18\" id=\"Gen.26.18!f.1\" class=\"note f\"><span class=\"fr\">26.18
+        <\/span><span class=\"fq\">gave \u2026 same name: <\/span><span class=\"ft\">By
+        doing this Isaac claimed ownership of the wells.<\/span><\/span>","note_id":"Gen.26.18!f.1","verse_id":"eng-CEV:Gen.26.18"}},{"footnote":{"marker":"+","content":"<span
+        verse_id=\"Gen.26.33\" id=\"Gen.26.33!f.1\" class=\"note f\"><span class=\"fr\">26.33
+        <\/span><span class=\"fq\">Shibah: <\/span><span class=\"ft\">In Hebrew \u201cShibah\u201d
+        sounds something like \u201cgood luck\u201d and \u201cpromise.\u201d<\/span><\/span>","note_id":"Gen.26.33!f.1","verse_id":"eng-CEV:Gen.26.33"}},{"footnote":{"marker":"+","content":"<span
+        verse_id=\"Gen.26.33\" id=\"Gen.26.33!f.2\" class=\"note f\"><span class=\"fr\">26.33
+        <\/span><span class=\"fq\">Beersheba: <\/span><span class=\"ft\">Meaning \u201cWell
+        of Good Fortune\u201d or \u201cPeace Treaty Well.\u201d<\/span><\/span>","note_id":"Gen.26.33!f.2","verse_id":"eng-CEV:Gen.26.33"}}],"crossreferences":[{"crossreference":{"marker":"-","content":"<span
+        verse_id=\"Gen.26.3\" id=\"Gen.26.3!x.1\" class=\"note x\"><span class=\"xo\">26.3,4
+        <\/span><span class=\"xt\">Gn 22.16-18.<\/span><\/span>","note_id":"Gen.26.3!x.1","verse_id":"eng-CEV:Gen.26.3"}},{"crossreference":{"marker":"-","content":"<span
+        verse_id=\"Gen.26.7\" id=\"Gen.26.7!x.1\" class=\"note x\"><span class=\"xo\">26.7
+        <\/span><span class=\"xt\">Gn 12.13; 20.2.<\/span><\/span>","note_id":"Gen.26.7!x.1","verse_id":"eng-CEV:Gen.26.7"}},{"crossreference":{"marker":"-","content":"<span
+        verse_id=\"Gen.26.26\" id=\"Gen.26.26!x.1\" class=\"note x\"><span class=\"xo\">26.26
+        <\/span><span class=\"xt\">Gn 21.22.<\/span><\/span>","note_id":"Gen.26.26!x.1","verse_id":"eng-CEV:Gen.26.26"}}]}],"meta":{"fums":"<script>\nvar
+        _BAPI=_BAPI||{};\nif(typeof(_BAPI.t)===''undefined''){\ndocument.write(''\\x3Cscript
+        src=\"''+document.location.protocol+''\/\/d2ue49q0mum86x.cloudfront.net\/include\/fums.c.js\"\\x3E\\x3C\/script\\x3E'');}\ndocument.write(\"\\x3Cscript\\x3E_BAPI.t(''5266d94d7124f9.31348024'');\\x3C\/script\\x3E\");\n<\/script><noscript><img
+        src=\"https:\/\/d3a2okcloueqyx.cloudfront.net\/nf1?t=5266d94d7124f9.31348024\"
+        height=\"1\" width=\"1\" border=\"0\" alt=\"\" style=\"height: 0; width: 0;\"
+        \/><\/noscript>","fums_tid":"5266d94d7124f9.31348024","fums_js_include":"d2ue49q0mum86x.cloudfront.net\/include\/fums.c.js","fums_js":"var
+        _BAPI=_BAPI||{};if(typeof(_BAPI.t)!=''undefined''){ _BAPI.t(''5266d94d7124f9.31348024'');
+        }","fums_noscript":"<img src=\"https:\/\/d3a2okcloueqyx.cloudfront.net\/nf1?t=5266d94d7124f9.31348024\"
+        height=\"1\" width=\"1\" border=\"0\" alt=\"\" style=\"height: 0; width: 0;\"
+        \/>"}}}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2013 20:00:13 GMT
+recorded_with: VCR 2.6.0

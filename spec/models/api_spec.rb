@@ -1,7 +1,7 @@
 #coding: utf-8
 require 'spec_helper'
 
-describe API do
+describe API, vcr: true do
 
   it %{includes chapters when fetching books} do
     genesis = API.books_with_chapters('eng-CEV').collection[0]
