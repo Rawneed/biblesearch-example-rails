@@ -47,7 +47,6 @@ h5 {font-size: em(17);}
         color: (lighten($black, 55%));
     }
     p {
-        margin-bottom: 10px;
         line-height: 1.6;
         @media screen and (max-width: 768px) {font-size: em(20);line-height: 1.4;text-align: justify;}
         @media screen and (max-width: 40em) {font-size: em(18);line-height: 1.4;text-align: justify;}
