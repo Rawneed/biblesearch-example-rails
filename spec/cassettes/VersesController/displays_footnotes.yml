@@ -1,0 +1,123 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://<%= api_key %>:X@bibles.org/v2/versions/ENG-CEV.js
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.6
+      Date:
+      - Tue, 22 Oct 2013 20:00:14 GMT
+      Content-Type:
+      - application/javascript
+      Content-Length:
+      - '2671'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/5.3.23
+      Set-Cookie:
+      - abs_session=C4QiFK%2BkpjAAnJ62Yyi7BRYuG9G%2B3y4lTs3SKkY%2BSld09kY43rfs%2BBf84kDDC1Hy0%2FYaFQ01vDagOeBqfFAimUgypHDctNW6BatXbEts3e832atIBs5n06NVBBEGlM1tug7RUXzmWY7%2FCY0%2Bi8qvvlhD9UB46f1VAik7p1%2FoHTGymmZzV0O4Og8jq1DPGdTH22%2F5xD%2FM%2FVuKqx3jiwPPldUJ0VCL%2FDRp6SDkxxhm5CQrHwOJ%2BYW90Eml1wqTpRONBssrozQ1Eq4IP9ugH%2F7qXz5DAtEbnfGPe5JG%2FXbyiB0%3D;
+        expires=Fri, 20-Oct-2023 20:00:17 GMT; path=/; domain=.bibles.org
+      - abs_session=alf3vbWi0gInvpL581mUbFfM61HuHGaExuqD188ejw2MpYaApWb0SUDc6j0OKn%2Bpm632RVyYT01WoQLiN4IIBs9zNiViGso6wiR6OBbiGTpVQQdfl3F7AsZspwci%2BtZ4zD0W6m7wkOAbbwAycxNe19GMRxWNRedZluw16vpLn1KJrnrI7TH7514Rp%2FR6nmkjeFo%2FSKNxHMQ6yOyTDSqNE0Dy4KXc%2BeUJZriJnX0fJjWHtzVHj8T7wm99E%2Fch6tQsPYbhO8gVG%2FA423frfIPx1pmQXNGPCiiG%2FyXvnKdp9OeoQKxgLaVXPwaCuxS%2F6WubQ2SIAjonwcOr1VKnpl4RedSnDSu5SXslFtXpuSMPb3VED8LPBzM%2Fp0pKxvHoJex9;
+        expires=Fri, 20-Oct-2023 20:00:17 GMT; path=/; domain=.bibles.org
+      - abs_uid=ee6190d3ca83d12ed29f8ee0059a74649c815fbf; expires=Fri, 20-Oct-2023
+        20:00:17 GMT; path=/; domain=.bibles.org
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"versions":[{"id":"eng-CEV","name":"Contemporary English
+        Version (US Version)","lang":"eng-US","lang_code":"ISO 639-3","contact_url":"http:\/\/www.americanbible.org\/","audio":"NONE","copyright":"<p>Contemporary
+        English Version\u00ae \u00a9 1995 American Bible Society.  All rights reserved.<\/p>\n<p>Bible
+        text from the Contemporary English Version (CEV) is not to be reproduced in
+        copies or otherwise by any means except as permitted in writing by American
+        Bible Society, 1865 Broadway, New York, NY 10023 (<a href=\"http:\/\/www.americanbible.org\/\">www.americanbible.org<\/a>).<\/p>","info":"<h1>Contemporary
+        English Version (US Version)<\/h1>\n<p>Uncompromising simplicity marked the
+        American Bible Society''s translation of the Contemporary English Version
+        that was first published in 1995. The text is easily read by grade schoolers,
+        second language readers, and those who prefer the more contemporized form.
+        The CEV is not a paraphrase; it is an accurate and faithful translation of
+        the original manuscripts.<\/p>\n<p>After almost 200 years of ongoing ministry,
+        American Bible Society invites people to experience the life-changing message
+        of the Bible. Offering an increasing range of innovative ministries to address
+        core life questions and struggles, the Bible Society partners with Christian
+        churches and national Bible societies to share God\u2019s Word both in the
+        United States and around the globe.<\/p>\n<p>For more information, visit <a
+        href=\"http:\/\/www.americanbible.org\/\">www.americanbible.org<\/a>.<\/p>
+        \n<p>To purchase a copy of this translation, visit <a href=\"http:\/\/www.bibles.com\/\">www.bibles.com<\/a>.<\/p>","lang_name":"English
+        (US)","lang_name_eng":"English","abbreviation":"CEV","updated_at":""}],"meta":{"fums":"<script>\nvar
+        _BAPI=_BAPI||{};\nif(typeof(_BAPI.t)===''undefined''){\ndocument.write(''\\x3Cscript
+        src=\"''+document.location.protocol+''\/\/d2ue49q0mum86x.cloudfront.net\/include\/fums.c.js\"\\x3E\\x3C\/script\\x3E'');}\ndocument.write(\"\\x3Cscript\\x3E_BAPI.t(''5266d9511bbcd3.60610268'');\\x3C\/script\\x3E\");\n<\/script><noscript><img
+        src=\"https:\/\/d3a2okcloueqyx.cloudfront.net\/nf1?t=5266d9511bbcd3.60610268\"
+        height=\"1\" width=\"1\" border=\"0\" alt=\"\" style=\"height: 0; width: 0;\"
+        \/><\/noscript>","fums_tid":"5266d9511bbcd3.60610268","fums_js_include":"d2ue49q0mum86x.cloudfront.net\/include\/fums.c.js","fums_js":"var
+        _BAPI=_BAPI||{};if(typeof(_BAPI.t)!=''undefined''){ _BAPI.t(''5266d9511bbcd3.60610268'');
+        }","fums_noscript":"<img src=\"https:\/\/d3a2okcloueqyx.cloudfront.net\/nf1?t=5266d9511bbcd3.60610268\"
+        height=\"1\" width=\"1\" border=\"0\" alt=\"\" style=\"height: 0; width: 0;\"
+        \/>"}}}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2013 20:00:17 GMT
+- request:
+    method: get
+    uri: http://<%= api_key %>:X@bibles.org/v2/verses/eng-CEV:Gen.26.1.js?include_marginalia=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.6
+      Date:
+      - Tue, 22 Oct 2013 20:00:14 GMT
+      Content-Type:
+      - application/javascript
+      Content-Length:
+      - '2126'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/5.3.23
+      Set-Cookie:
+      - abs_session=UD6zxRTF5wNWKeS1dOK%2Bk6dcInGnZz4zULpaP6tzAezFL7GkGvtVIdsDrFeR05gXHmuEXTy726kOV8iY7%2B7HW9O0bmmfYN%2Bvajb88sTpg13Wf8sKFY6J4mMoZPwZaMCVv8ZtgvPTNqaRYvENnyVtWl0B8QDLh6by9q4%2BC6%2FubPNiDgqb%2FRwf51OgyZSnqnorl0BhKp2%2BXP0FdZne%2F2ToeL1Cu63VQDIpi9LMYu1lC4qKg1kWMIT38tGV9SNYjAyx1UVKCWMlHYIBwyTq5Sn5La7WtulIt4%2F5FG1AU7l1xQ8%3D;
+        expires=Fri, 20-Oct-2023 20:00:17 GMT; path=/; domain=.bibles.org
+      - abs_session=V6fEZMC06F3Us6rTkuMmC9Glhz43ikwrSkgbTivJflSJj5axFHIpf%2FXTuGy4IS7n3hlWv%2B5%2BFtLziL7%2BMflEi%2F7pPKfkp2%2BqxbAzA88ri3NPVxWVVJ8%2FCy7hrLSsQ%2BQXCh0NMitq1ClGVITBSRQgq2%2B%2FzK70IIlORjRjYPixCgiPDEkt%2BnBjT6NJiZEDTyXSmz%2FDOQvg9ppoemLsS8sXXBAtpfd4cO2gRcNnTtD5kW7GBBhbXlqVJSTA4WSqfzZNJXNxPjToJ5CIDc5KtaTJCZvpnIRSf3RfmEbB5Rt6nIHwhw6ByBSQ4j5eA9vJstEYHGnFMtIosYECRTPX4IRWgTMturv1KICj5O9UNmN6s%2BMa5hIiJ%2BYOij%2FM2GLkJYeg;
+        expires=Fri, 20-Oct-2023 20:00:17 GMT; path=/; domain=.bibles.org
+      - abs_uid=d6e50bc2e5d855cf588d2498ec48bb4c7fe2ef9b; expires=Fri, 20-Oct-2023
+        20:00:17 GMT; path=/; domain=.bibles.org
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"verses":[{"auditid":"0","verse":"1","lastverse":"1","id":"eng-CEV:Gen.26.1","osis_end":"eng-CEV:Gen.26.1","label":"","reference":"Genesis
+        26:1","text":"<h3 class=\"s1\">Isaac and Abimelech<\/h3>\n<p class=\"p\"><sup
+        id=\"Gen.26.1\" class=\"v\">1<\/sup>Once during Abraham''s lifetime, the fields
+        had not produced enough grain, and now the same thing happened. So Isaac went
+        to King Abimelech of the Philistines in the land of Gerar,<\/p>","parent":{"chapter":{"path":"\/chapters\/eng-CEV:Gen.26","name":"Genesis
+        26","id":"eng-CEV:Gen.26"}},"next":{"verse":{"path":"\/verses\/eng-CEV:Gen.26.2","name":"Genesis
+        26:2","id":"eng-CEV:Gen.26.2"}},"previous":{"verse":{"path":"\/verses\/eng-CEV:Gen.25.34","name":"Genesis
+        25:34","id":"eng-CEV:Gen.25.34"}},"copyright":"<p>Contemporary English Version\u00ae
+        \u00a9 1995 American Bible Society.  All rights reserved.<\/p>\n<p>Bible text
+        from the Contemporary English Version (CEV) is not to be reproduced in copies
+        or otherwise by any means except as permitted in writing by American Bible
+        Society, 1865 Broadway, New York, NY 10023 (<a href=\"http:\/\/www.americanbible.org\/\">www.americanbible.org<\/a>).<\/p>","footnotes":[],"crossreferences":[]}],"meta":{"fums":"<script>\nvar
+        _BAPI=_BAPI||{};\nif(typeof(_BAPI.t)===''undefined''){\ndocument.write(''\\x3Cscript
+        src=\"''+document.location.protocol+''\/\/d2ue49q0mum86x.cloudfront.net\/include\/fums.c.js\"\\x3E\\x3C\/script\\x3E'');}\ndocument.write(\"\\x3Cscript\\x3E_BAPI.t(''5266d95144fd79.43438352'');\\x3C\/script\\x3E\");\n<\/script><noscript><img
+        src=\"https:\/\/d3a2okcloueqyx.cloudfront.net\/nf1?t=5266d95144fd79.43438352\"
+        height=\"1\" width=\"1\" border=\"0\" alt=\"\" style=\"height: 0; width: 0;\"
+        \/><\/noscript>","fums_tid":"5266d95144fd79.43438352","fums_js_include":"d2ue49q0mum86x.cloudfront.net\/include\/fums.c.js","fums_js":"var
+        _BAPI=_BAPI||{};if(typeof(_BAPI.t)!=''undefined''){ _BAPI.t(''5266d95144fd79.43438352'');
+        }","fums_noscript":"<img src=\"https:\/\/d3a2okcloueqyx.cloudfront.net\/nf1?t=5266d95144fd79.43438352\"
+        height=\"1\" width=\"1\" border=\"0\" alt=\"\" style=\"height: 0; width: 0;\"
+        \/>"}}}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2013 20:00:17 GMT
+recorded_with: VCR 2.6.0

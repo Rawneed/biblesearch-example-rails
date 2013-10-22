@@ -19,14 +19,14 @@ BiblesearchExample::Application.configure do
     dalli_store: [],
     memory_store: []
   }
-  cache_store = ENV.fetch('RAILS_CACHE_STORE', 'file_store').to_sym
+  cache_store = ENV.fetch('RAILS_CACHE_STORE', 'null_store').to_sym
   begin
     cache_args, = recognized_cache_stores.fetch(cache_store)
+    config.cache_store = cache_store, *cache_args, {expires_in: 2.weeks}
   rescue KeyError
     msg = "RAILS_CACHE_STORE in ENV or application.yml must be in #{recognized_cache_stores.keys}."
     raise KeyError.new(msg)
   end
-  config.cache_store = cache_store, *cache_args, {expires_in: 2.weeks}
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false

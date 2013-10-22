@@ -9,6 +9,39 @@ require 'rspec/autorun'
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+# Configure VCR API playback testing
+DUMMY_API_KEY = 'DUMMY_API_KEY'
+BIBLESEARCH_API_KEY = ENV.fetch('BIBLESEARCH_API_KEY', DUMMY_API_KEY)
+API_KEY_TEMPLATE='<%= api_key %>'
+CASSETTE_VARS = {api_key: BIBLESEARCH_API_KEY}
+VCR_LOG_FILE='log/VCR.log'
+
+# VCR loaded for every test makes full stack tests fail.
+VCR.configure do |c|
+  # BASIC CONFIGURATION
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :webmock
+  c.debug_logger = File.open(VCR_LOG_FILE, 'w')
+  c.ignore_localhost=true
+  c.configure_rspec_metadata!
+
+  # DISABLE RECORDING UNLESS THERE'S API KEY IN THE ENV
+  if BIBLESEARCH_API_KEY == DUMMY_API_KEY
+    # don't record
+    c.default_cassette_options = {:record => :none}
+  else
+    # we have an API key, might want to record
+    c.default_cassette_options = {:record => :new_episodes}
+  end
+
+  #EXPUNGE SECRET KEYS
+  #  when recording, transform secrets to a template
+  c.filter_sensitive_data( API_KEY_TEMPLATE) { BIBLESEARCH_API_KEY }
+  #  when playing, transform template into secrets
+  c.default_cassette_options[:erb] = CASSETTE_VARS
+end
+
+
 RSpec.configure do |config|
   config.include(EmailSpec::Helpers)
   config.include(EmailSpec::Matchers)
@@ -38,7 +71,7 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
-  
+
   config.before(:suite) do
     DatabaseCleaner.strategy = :truncation
   end

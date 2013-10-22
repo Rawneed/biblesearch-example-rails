@@ -35,8 +35,7 @@ class API
     end
   end
 
-#TODO: refactor to book
-  def self.books(book_uid)
+  def self.book(book_uid)
     Rails.cache.fetch([:book,book_uid]) do
       biblesearch.books(book_uid)
     end

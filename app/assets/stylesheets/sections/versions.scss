@@ -8,6 +8,7 @@
     padding-bottom: .8em;
     margin-bottom: 0;
     font-weight: 700;
+    font-size: em(22);
     @media screen and (max-width: 40em) {font-size: 1.4em;}
 }
 
@@ -19,7 +20,7 @@
         li {
             border-bottom: 1px solid $lightgray;
             & > a {
-                font-size: em(20);
+                font-size: 1em;
                 color: $black;
                 font-weight: 400;
                 display: block;
@@ -47,7 +48,7 @@
         li {
             border-bottom: 1px solid $lightgray;
             & > a {
-                font-size: em(18);
+                font-size: 1em;
                 color: $black;
                 font-weight: 400;
                 display: block;

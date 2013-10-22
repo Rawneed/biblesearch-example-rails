@@ -14,8 +14,10 @@ gem 'bourbon'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'html2haml'
-gem 'rspec-rails', :group => [:development, :test]
-gem 'guard-rspec', :group => [:development, :test]
+gem 'rspec-rails', :group => [:test]
+gem 'guard-rspec', :group => [:test]
+gem 'vcr', :group => [:test]
+gem 'webmock', '< 1.14', :group => [:test]
 #gem 'guard-livereload', :group => :development
 gem 'capybara', :group => :test
 gem 'database_cleaner', :group => :test
