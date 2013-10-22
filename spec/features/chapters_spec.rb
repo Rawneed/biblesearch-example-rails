@@ -1,8 +1,6 @@
 require 'spec_helper'
 
-describe "view chapter" do
-
-  use_vcr_cassette
+describe "view chapter", vcr: true do
 
 	it "displays chapter text" do
 		visit "/eng-CEV/Gen/1"

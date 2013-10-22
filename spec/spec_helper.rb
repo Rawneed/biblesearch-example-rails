@@ -22,7 +22,8 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
   c.debug_logger = File.open(VCR_LOG_FILE, 'w')
-  c.ignore_localhost=true
+  c.ignore_localhost=
+  c.configure_rspec_metadata!
 
   # DISABLE RECORDING UNLESS THERE'S API KEY IN THE ENV
   if BIBLESEARCH_API_KEY == DUMMY_API_KEY
@@ -44,7 +45,6 @@ end
 RSpec.configure do |config|
   config.include(EmailSpec::Helpers)
   config.include(EmailSpec::Matchers)
-  config.extend VCR::RSpec::Macros
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:

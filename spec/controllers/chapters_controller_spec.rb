@@ -1,13 +1,8 @@
 require 'spec_helper'
 
-describe ChaptersController do
+describe ChaptersController, vcr: true do
   before do
-    VCR.insert_cassette %{controller-chapters}, record: :all
     @biblesearch = BibleSearch.new(BIBLESEARCH_API_KEY)
-  end
-
-  after do
-    VCR.eject_cassette
   end
 
   it %{displays footnotes} do
