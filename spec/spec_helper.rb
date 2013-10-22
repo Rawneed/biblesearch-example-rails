@@ -22,7 +22,7 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
   c.debug_logger = File.open(VCR_LOG_FILE, 'w')
-  c.ignore_localhost=
+  c.ignore_localhost=true
   c.configure_rspec_metadata!
 
   # DISABLE RECORDING UNLESS THERE'S API KEY IN THE ENV
