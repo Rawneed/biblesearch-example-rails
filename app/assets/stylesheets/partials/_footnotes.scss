@@ -1,0 +1,34 @@
+.crossreferences, .footnotes {
+  margin: $block-margin;
+  border-top: solid 1px $lightgray;
+  padding-top: em(20);
+  padding-left: 0;
+  list-style: none;
+  color: lighten($black,40%);
+  font-family: $scripture-font;
+  li {
+    display: inline-block;
+  }
+}
+
+// Cross Ref Specific
+.xo, .fr {
+  font-weight: bold;
+  color: $black;
+}
+
+// Animate the target click
+.note:target {
+  border-bottom-color: $blue;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  -webkit-animation: target-fade 1.5s 1;
+}
+@-webkit-keyframes target-fade {
+    0% { border-color: rgba($blue,0);}
+    100% { border-color: rgba($blue,1);}
+}
+@-webkit-keyframes target-fade-dark {
+    0% { border-color: rgba($blue,0);}
+    100% { border-color: rgba($blue,1);}
+}

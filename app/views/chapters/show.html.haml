@@ -16,18 +16,15 @@
 #chapter.scripture
   =raw @chapter.text
 
-#chapter.crossreference
+#marginalia
   -if @chapter.crossreferences
-    %hr
-    %ul.crossreference
+    %ul.crossreferences
       -@chapter.crossreferences.each do |xref|
         %li.crossreference
           = raw xref.crossreference.content
 
-#chapter.footnote
   -if @chapter.footnotes
-    %hr
-    %ul.footnote
+    %ul.footnotes
       -@chapter.footnotes.each do |fn|
         %li.footnote
           =raw fn.footnote.content
