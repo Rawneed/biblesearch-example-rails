@@ -64,11 +64,4 @@ h5 {font-size: em(17);}
     .btn {
         font-family:$ui-font;
     }
-    // grab all the quotes
-    [class*='q'] {
-        font-style: italic;
-        color: (lighten($black,30%));
-        text-indent: .5em;
-        margin-left: 0;
-    }
 }
