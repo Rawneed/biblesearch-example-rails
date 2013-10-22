@@ -3,12 +3,12 @@
 This sample application uses several freely available technologies with varying license requirements. Be sure to understand them before you deploy. In summary, they are fairly open and simple:
 
 * **This Application**: MIT license.
-* **Fonts from SIL**: SIL OFL with Bitstream attribution
-
+* **CharisSIL Font**: SIL Open Font License 1.1
+* **Montserrat Font**: SIL Open Font License 1.1
 
 ## Application License
 
-Copyright (c) 2012. American Bible Society. ARR.
+Copyright © 2012. American Bible Society. ARR.
 
 This Rails application source code is distributed under the...
 
@@ -19,15 +19,20 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 ## Font Licenses
 
-To enable display of Scripture in many scripts, we gratefully use font technology from [The SIL Non-Roman Script Initiative](http://scripts.sil.org), whose detailed license page is [here](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
+### Reserved Names and Copyrights
+
+This application bundles or uses separately licensed fonts under the SIL Open Font License 1.1 (OFL). This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL.
+
+Following OFL rules, each font declares its own names and copyrights:
+
+* *CharisSIL*: Copyright © 1997-2013, SIL International http://scripts.sil.org/ with Reserved Font Names "Charis" and "SIL". (Available from the [SIL Non-Roman Script Initiative](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=charissilfont).)
+
+* *Montserrat*: Copyright © 2011-2012, Julieta Ulanovsky (julieta.ulanovsky@gmail.com), with Reserved Font Names 'Montserrat'. (Available from [Google Fonts](http://www.google.com/fonts/specimen/Montserrat).)
 
 ### SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
-
-This Font Software is Copyright (c) 1997-2013, SIL International http://scripts.sil.org/ with Reserved Font Names "Charis" and "SIL".
-
-This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL.
 
 #### PREAMBLE
 
@@ -43,7 +48,7 @@ The OFL allows the licensed fonts to be used, studied, modified and redistribute
 
 "Original Version" refers to the collection of Font Software components as distributed by the Copyright Holder(s).
 
-"Modified Version" refers to any derivative made by adding to, deleting, or substituting -- in part or in whole -- any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.
+"Modified Version" refers to any derivative made by adding to, deleting, or substituting—in part or in whole—any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.
 
 "Author" refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.
 
@@ -68,17 +73,3 @@ This license becomes null and void if any of the above conditions are not met.
 #### DISCLAIMER
 
 THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.
-
-### Bitstream Attribution
-
-#### Design
-
-The design of the basic character set of Charis SIL is similar (but not identical) to Bitstream Charter, designed by Matthew Carter. The following notice accompanied the Charter fonts:
-
-(c) Copyright 1989-1992, Bitstream Inc., Cambridge, MA.
-
-You are hereby granted permission under all Bitstream propriety rights to use, copy, modify, sublicense, sell, and redistribute the 4 Bitstream Charter (r) Type 1 outline fonts and the 4 Courier Type 1 outline fonts for any purpose and without restriction; provided, that this notice is left intact on all copies of such fonts and that Bitstream's trademark is acknowledged as shown below on all unmodified copies of the 4 Charter Type 1 fonts.
-
-BITSTREAM CHARTER is a registered trademark of Bitstream Inc.
-
-SIL International is the creator of the Charis SIL fonts, and is the owner of all proprietary rights therein.
