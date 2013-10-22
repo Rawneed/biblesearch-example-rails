@@ -1,9 +1,9 @@
-# BibleSearch Example Application Component Licenses
+# Bible Search Example Application Component Licenses
 
 This sample application uses several freely available technologies with varying license requirements. Be sure to understand them before you deploy. In summary, they are fairly open and simple:
 
 * **This Application**: MIT license.
-* **CharisSIL Font**: SIL Open Font License 1.1
+* **Charis SIL Font**: SIL Open Font License 1.1
 * **Montserrat Font**: SIL Open Font License 1.1
 * **Font Awesome Font**: SIL Open Font License 1.1
 
@@ -29,7 +29,7 @@ This application bundles or uses separately licensed fonts under the SIL Open Fo
 
 Following OFL rules, each font declares its own names and copyrights:
 
-* *CharisSIL*: Copyright © 1997-2013, SIL International http://scripts.sil.org/ with Reserved Font Names "Charis" and "SIL". (Available from the [SIL Non-Roman Script Initiative](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=charissilfont).)
+* *Charis SIL*: Copyright © 1997-2013, SIL International http://scripts.sil.org/ with Reserved Font Names "Charis" and "SIL". (Available from the [SIL Non-Roman Script Initiative](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=charissilfont).)
 
 * *Montserrat*: Copyright © 2011-2012, Julieta Ulanovsky (julieta.ulanovsky@gmail.com), with Reserved Font Names 'Montserrat'. (Available from [Google Fonts](http://www.google.com/fonts/specimen/Montserrat).)
 
