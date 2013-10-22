@@ -1,0 +1,22 @@
+.crossreferences, .footnotes {
+  margin-top: $block-margin;
+  border-top: solid 1px $lightgray;
+  padding-top: em(20);
+  padding-left: 0;
+  list-style: none;
+  color: lighten($black,40%);
+  font-family: $scripture-font;
+  li {
+    display: inline-block;
+  }
+}
+
+// Cross Ref Specific
+.xo, .fr {
+  font-weight: bold;
+  color: $black;
+}
+
+.note:target {
+  text-decoration: underline;
+}
