@@ -23,8 +23,9 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
   c.debug_logger = File.open(VCR_LOG_FILE, 'w')
-  c.ignore_localhost=true
   c.configure_rspec_metadata!
+  # only VCR requests to bibles.org (stubbing the api)
+  c.ignore_request  {|req| req.parsed_uri.host != 'bibles.org' }
 
   # DISABLE RECORDING UNLESS THERE'S API KEY IN THE ENV
   if BIBLESEARCH_API_KEY == DUMMY_API_KEY
