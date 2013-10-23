@@ -11,7 +11,8 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 # Configure VCR API playback testing
 DUMMY_API_KEY = 'DUMMY_API_KEY'
-BIBLESEARCH_API_KEY = ENV.fetch('BIBLESEARCH_API_KEY', DUMMY_API_KEY)
+ENV['BIBLESEARCH_API_KEY'] = DUMMY_API_KEY unless ENV.has_key?('BIBLESEARCH_API_KEY')
+BIBLESEARCH_API_KEY = ENV['BIBLESEARCH_API_KEY']
 API_KEY_TEMPLATE='<%= api_key %>'
 CASSETTE_VARS = {api_key: BIBLESEARCH_API_KEY}
 VCR_LOG_FILE='log/VCR.log'
