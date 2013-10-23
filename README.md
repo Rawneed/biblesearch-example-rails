@@ -45,3 +45,4 @@ Here are the configurable settings:
 ## Taking it Further
 
 If you don't know Ruby on Rails yet, it's a great tool to learn. If you know it already—or when you learn it—we welcome your enhancements as [GitHub Pull Requests](https://help.github.com/articles/using-pull-requests).
+ 
