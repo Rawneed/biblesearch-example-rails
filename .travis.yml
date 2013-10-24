@@ -13,5 +13,4 @@ notifications:
 env:
   global:
   - S3_BUCKET_NAME=abs-travis-wad
-  - S3_REGION=us-west-1
   - secure: "aXXgdoLPsCgUweQVp0xmCLpJ4iWCxDtmpuxOUbTp7JJruJKUgPshDFyZz16RrjbtiSLH4qBYmHs0O8qqU8KQEQS3FifuDEbB3SuqDhnTkcdmYYXTTND3qGcU8P5czI6d4OW50SL/ejN/E2O7STtalc7vVFJPrPUkl9ZlAvdVheU="
