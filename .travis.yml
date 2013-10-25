@@ -1,4 +1,7 @@
 language: ruby
+# If you're having WAD errors:
+# 1. try erasing the files from the bucket listed below in S3_BUCKET_NAME
+# 2. try commenting out the following line
 install: "script/wad"
 script: "bundle exec rake spec"
 rvm:
