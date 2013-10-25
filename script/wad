@@ -180,7 +180,7 @@ class Presss
     # the content-type if you want to set a specific one.
     def put(path, file, content_type=nil)
       path = canonicalized_resource(path)
-      body = file.respond_to?(:read) ? file : file.to_s 
+      body = file.respond_to?(:read) ? file : file.to_s
       date = Time.now.rfc2822
       message = join('PUT', body, content_type, date, nil, path)
       headers = headers(date, message, content_type)
@@ -326,7 +326,7 @@ class Wad
   end
 
   def s3_region
-    ENV['S3_REGON'] || 'eu-west-1'
+    ENV['S3_REGION'] || 'us-east-1' #should match Presss::HTTP behavior which is 'us-east-1'
   end
 
   def s3_configure
@@ -419,12 +419,32 @@ class Wad
     end
   end
 
+  # Test the S3 connection. Expects ENV to hold S3_CREDENTIALS, S3_BUCKET_NAME, and S3_REGION
+  # recommend running with -v
+  def test
+    require 'debug'
+    if Presss.put('wad_test_upload_streaming', open(__FILE__))
+      log "Streaming test succeeded."
+    else
+      log "Streaming test failed."
+    end
+    if Presss.put('wad_test_upload_non-streaming', File.read(__FILE__))
+      log "Non-Streaming test succeeded."
+    else
+      log "Non-Streaming test failed."
+    end
+  end
+
   def log(message)
     puts "[wad] #{message}"
   end
 
   def self.setup
     new.setup
+  end
+
+  def self.test
+    new.test
   end
 end
 
@@ -433,7 +453,11 @@ if ARGV.index('-v')
   Presss.logger = Logger.new($stdout)
 end
 
-Wad.setup
+if ARGV.index('-t')
+  Wad.test
+else
+  Wad.setup
+end
 __END__
 
 ##

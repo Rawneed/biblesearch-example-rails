@@ -1,5 +1,5 @@
 language: ruby
-#install: "script/wad"
+install: "script/wad"
 script: "bundle exec rake spec"
 rvm:
 - 1.9.3
