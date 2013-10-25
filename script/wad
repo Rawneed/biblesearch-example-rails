@@ -180,7 +180,7 @@ class Presss
     # the content-type if you want to set a specific one.
     def put(path, file, content_type=nil)
       path = canonicalized_resource(path)
-      body = file.respond_to?(:read) ? file : file.to_s
+      body = file.respond_to?(:read) ? file : file.to_s 
       date = Time.now.rfc2822
       message = join('PUT', body, content_type, date, nil, path)
       headers = headers(date, message, content_type)
@@ -197,7 +197,6 @@ class Presss
         request.body = body
       end
 
-      #DEBUG here's where the write error hits #BRO
       begin
         response = http.start { |http| http.request(request) }
         Presss::HTTP::Response.new(
@@ -277,7 +276,7 @@ class Wad
   def write_cacert
     FileUtils.mkdir_p(File.dirname(cacert_filename))
     File.open(cacert_filename, 'wb') do |file|
-      file.write(q.read)
+      file.write(DATA.read)
     end
   end
 
