@@ -326,7 +326,7 @@ class Wad
   end
 
   def s3_region
-    ENV['S3_REGION'] || 'us-east-1' #should match Presss::HTTP behavior which is 'us-east-1'
+    ENV['S3_REGION'] || 'us-east-1'
   end
 
   def s3_configure
@@ -422,7 +422,6 @@ class Wad
   # Test the S3 connection. Expects ENV to hold S3_CREDENTIALS, S3_BUCKET_NAME, and S3_REGION
   # recommend running with -v
   def test
-    require 'debug'
     if Presss.put('wad_test_upload_streaming', open(__FILE__))
       log "Streaming test succeeded."
     else
