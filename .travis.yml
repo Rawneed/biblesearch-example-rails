@@ -1,10 +1,20 @@
 language: ruby
+# If you're having WAD errors:
+# 1. try erasing the files from the bucket listed below in S3_BUCKET_NAME
+# 2. try commenting out the following line
+install: "script/wad"
+script: "bundle exec rake spec"
 rvm:
 - 1.9.3
+- 2.0.0
 notifications:
   hipchat:
     rooms:
       secure: JNZbQsamtdY3i/NO1DUi/+QRNrx5r2AR65fclQK6u+04Inol8PiCtEyl5hXdiuNAc+EStm8tpGTElDUDeDpop+1B9k74m0h48NYXIz88fybgA1Cr4dF5aslmhQhOh/AI2txTeuFpaOhH6KrTx4h4/S0nmfylrVHS64BOZy5UfDc=
     template:
     - ! '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
+env:
+  global:
+  - S3_BUCKET_NAME=abs-travis-wad
+  - secure: "aXXgdoLPsCgUweQVp0xmCLpJ4iWCxDtmpuxOUbTp7JJruJKUgPshDFyZz16RrjbtiSLH4qBYmHs0O8qqU8KQEQS3FifuDEbB3SuqDhnTkcdmYYXTTND3qGcU8P5czI6d4OW50SL/ejN/E2O7STtalc7vVFJPrPUkl9ZlAvdVheU="
 
