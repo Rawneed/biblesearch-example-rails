@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
 	end
 
 	def site_versions
-		@site_versions ||= API.versions({expire_in: 1.day}).collection.keep_if{|v| ENV['SITE_VERSIONS'].include?(v.id)}
+		@site_versions ||= ENV['SITE_VERSIONS'].split(",").collect{|version_id| API.versions({expire_in: 1.day}).collection.select{|v| v.id == version_id}}.flatten
 	end
 
 	def set_current_version
