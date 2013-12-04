@@ -4,10 +4,12 @@
 	=link_to chapter_path(@verse.parent.chapter.id), :class=>"btn" do
 		%i.icon-eye
 		=@verse.parent.chapter.name
-#verse.crossrefernces
-    = raw @verse.crossreferences
-#verse.footnotes
-    =raw @verse.footnotes
+-unless @verse.crossreferences.blank?
+	#verse.crossreferences
+		=raw @verse.crossreferences
+-unless @verse.footnotes.blank?
+	#verse.footnotes
+		=raw @verse.footnotes
 #copyright
 	=raw @verse.copyright
 #fums
